@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-30deg,#d29dff 0%, #30f700 50%, #ff8d75 50%, #005e00 100%);
+    /* filter: hue-rotate(120deg); */
+    animation: ani 10s linear infinite;
+
+    
+}
+@keyframes ani
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.box
+{
+    /* border: 3px solid black; */
+    position: relative;
+    padding: 50px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 5px 35px rgba(0,0,0, 0.1);
+}
+.box::after
+{
+    content: "";
+    /* position: absolute; */
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(255,255,255, 0.3) 0%, rgba(255,255,255, 0.1) 15%, transparent 50% ,  transparent 85%, rgba(255,255,255, 0.3)100%);
+
+}
+.form
+{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.input
+{
+    position: relative;
+    width: 100%;
+}
+input
+{
+    width: 100%;
+    outline: none;
+    border: 3px solid rgba(255,255,255, 0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 45px;
+    margin-bottom: 20px;
+}
+img
+{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    /* transform: scale(0.7);
+    filter: invert(1); */
+
+}
+input[type="submit"]
+{
+    max-width: 100px;
+    padding: 8px 10px;
+    background: white;
+    color: black;
+}
+input::placeholder
+{
+    color: white;
+}
+label
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.a
+{
+    padding-left: 45px;
+    /* padding-top: 8px; */
+    width: 100%;
+}
+#cars
+{
+    width: 100%;
+    height: 29px;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}

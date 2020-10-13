@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="form">
+                <form action="">
+                    <div class="input">
+                        <input type="text" required placeholder="Situation">
+                        <img src="./image/report.png" alt="" height="30px">
+                    </div>
+                    <div class="input">
+                        <input type="text" required placeholder="Worry">
+                        <img src="./image/worried.png" alt="" height="30px">
+                    </div>
+                    <div class="input a">
+                        <img src="./image/depression.png" alt="" height="30px">
+                        <label for="vol">Anxiety (between 0 and 10):</label>
+                        <input type="range" id="vol" name="vol" min="0" max="10">
+                    </div>
+                    <div class="input a">
+                        <img src="./image/double-arrow-bifurcation-to-both-sides.png" alt="" height="30px">
+                        <label for="cars">Type 1 or Type 2:</label>
+                        <select name="cars" id="cars">
+                          <option value="Type 1">Type 1</option>
+                          <option value="Type 2">Type 2</option>
+                          <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
